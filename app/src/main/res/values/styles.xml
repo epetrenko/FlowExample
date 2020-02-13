@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">?attr/colorPrimaryDark</item>
+        <item name="android:navigationBarColor">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="Toolbar" parent="ThemeOverlay.MaterialComponents.Dark">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?android:attr/actionBarSize</item>
+        <item name="android:minHeight">?android:attr/actionBarSize</item>
+        <item name="android:theme">@style/Theme.Toolbar</item>
+        <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetEnd">16dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <style name="Theme.Toolbar" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlHighlight">?attr/colorAccent</item>
+    </style>
+
+</resources>
